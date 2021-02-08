@@ -1,20 +1,16 @@
 "use strict";
-var skills;
-(function (skills) {
-    skills["FRONT_END"] = "React and other front end technologies";
-    skills["BACK_END"] = "Node and other related technologies";
-})(skills || (skills = {}));
-let data1 = {
-    name: "Taimoor khan",
-    age: 21,
-    status: true,
-    skills: skills.FRONT_END,
-    20: "hello world",
+// enum skills {
+//   FRONT_END = "React and other front end technologies",
+//   BACK_END = "Node and other related technologies",
+// }
+const person1 = {
+    name: "taimoor khan",
+    canFly: false,
+    canWalk: true,
+    education: "Bachelors",
+    skills: ["Computer", "programming", "Designing"],
+    human: true,
+    specialPower: false,
 };
-let a = {
-    b: "x",
-    c: "hello",
-};
-const e = { name: "Mansoor", NIC: 4240 | 445 };
-console.log(e);
+console.log(typeof person1);
 //# sourceMappingURL=index.js.map
