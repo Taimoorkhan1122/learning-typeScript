@@ -35,10 +35,11 @@
 // Union and intersection
 
 type superHuman = {
-  sName: string;
+  name: string;
   specialPower: string | boolean;
   canFly: boolean;
   human: boolean;
+  same: string;
 };
 
 type human = {
@@ -46,9 +47,12 @@ type human = {
   canWalk: boolean;
   education: string;
   skills: string[];
+  same: string;
 };
 
 type superHumanOrHumanOrBoth = superHuman | human;
+
+type similarities = superHuman & human;
 
 const person1: superHumanOrHumanOrBoth = {
   name: "taimoor khan",
@@ -58,6 +62,15 @@ const person1: superHumanOrHumanOrBoth = {
   skills: ["Computer", "programming", "Designing"],
   human: true,
   specialPower: false,
+};
+
+const humanOrHero: similarities = {
+  name: "mansoor",
+  canFly: false,
+  canWalk: false,
+  specialPower: "taimoor",
+  human: true,
+  same: "hello",
 };
 
 console.log(typeof person1);
